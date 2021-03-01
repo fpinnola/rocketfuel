@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "rocketfuel",
+    title: "Rocket Fuel Ventures",
   },
   plugins: [
     "gatsby-plugin-sass",
