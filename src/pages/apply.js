@@ -7,6 +7,7 @@ import { Form, FormField, SubmitButton } from "../components/forms";
 import * as Yup from "yup";
 
 import launch from '../images/launch.png';
+import team from '../images/team.png';
 
 
 const validationSchema = Yup.object().shape({
@@ -22,7 +23,7 @@ const pageStyles = {
     // backgroundColor: "#A32638",
     width: '100%',
     height: '100vh',
-    backgroundImage: `url(${launch})`,
+    backgroundImage: `url(${team})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -35,17 +36,24 @@ const pageStyles = {
     display: 'flex',
     justifyContent: 'center',
     paddingLeft: '2em',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    alignItems: 'center'
   }
   const card = {
     backgroundColor: "white",
     borderRadius: 20,
     padding: 50,
-    maxWidth: '20em',
+    maxWidth: '40em',
+    width: '25%',
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center'
+  }
+
+  const inputLabel = {
+    textAlign: "left",
+    width: '100%'
   }
 
 // markup
@@ -69,11 +77,11 @@ const IndexPage = () => {
                     }}
                     onSubmit={handleSubmit}
                     >
-                        <label style={{textAlign: "left" }}>Your name</label>
+                        <label style={inputLabel}>Your name</label>
                         <FormField name="name" placeholder="Name" />
-                        <label>Email</label>
+                        <label style={inputLabel}>Email</label>
                         <FormField name="email" placeholder="Email" />
-                        
+                        <label style={inputLabel}>Resume</label>
                 </Form>
               </div>
               

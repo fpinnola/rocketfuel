@@ -19,7 +19,6 @@ const input = {
     outline: 'none',
     marginLeft: 15,
     marginRight: 10,
-    // fontFamily: "Monterrat",
     fontSize: 16,
     width: '100%'
 }
@@ -42,7 +41,7 @@ function TextInput({
 }) {
   if (type === "textarea") {
     return (
-      <div style={inputContainer} style={containerStyle}>
+      <div style={inputContainer} >
         {LeftIcon && (
           <LeftIcon
             className="left-icon"
@@ -68,7 +67,7 @@ function TextInput({
     );
   } else {
     return (
-      <div style={inputContainer} style={containerStyle}>
+      <div style={inputContainer}>
         {LeftIcon && (
           <LeftIcon
             className="left-icon"
