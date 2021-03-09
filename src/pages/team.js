@@ -19,14 +19,22 @@ const pageStyles = {
     paddingLeft: '2em',
     flexDirection: 'column'
   }
+
+  const container = {
+    display: 'flex',
+    padding: 25
+  }
+
+  const title = {
+    color: "#A32638"
+  }
   
   const Team = () => (
     <Layout>
       {/* <SEO title="Home" /> */}
       <main style={pageStyles}>
-        <div style={imageCover}>
-          <h1 style={{maxWidth: '40ch', color: 'white'}}>A student-led Venture Capital Initiative at Stevens Institute of Technology</h1>
-          <Link href="/apply">Let's Go</Link>
+        <div style={container}>
+          <h1 style={title}>Our Team</h1>
         </div>
       </main>
     </Layout>
