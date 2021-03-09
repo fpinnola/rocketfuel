@@ -82,6 +82,8 @@ const IndexPage = () => {
                         <label style={inputLabel}>Email</label>
                         <FormField name="email" placeholder="Email" />
                         <label style={inputLabel}>Resume</label>
+                        <input type="file" onChange={(e) => console.log(e)} />
+                        <SubmitButton label="Submit" />
                 </Form>
               </div>
               

@@ -23,19 +23,12 @@ function Navbar(props) {
   return (
     <>
       <div className={`navbar ${drawerOpened ? "opened" : null}`}>
-        <div className="navbar-container">
+        <div className="navbar-container shadow-sm">
           <NavLink className="nav-left" to="/">
             <img src={Logo} alt="Launchpad logo" className="logo" />
             <h2 className="logo-text">launchpad@stevens</h2>
           </NavLink>
           <div className="hamburger-icon">
-            {/* <Lottie
-              lottieRef={hamburgerRef}
-              animationData={Hamburger}
-              loop={false}
-              autoplay={false}
-              onClick={toggleDrawer}
-            /> */}
           </div>
           <div className="nav-right">
             <NavLink to="/" className="nav-link">
@@ -50,7 +43,6 @@ function Navbar(props) {
             <NavLink to="/login" className="nav-link last">
               Login
             </NavLink>
-            {/* <Button label="Donate" to="/" /> */}
           </div>
         </div>
         <div className={`nav-drawer ${drawerOpened ? "opened" : null}`}>

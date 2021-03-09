@@ -4,7 +4,7 @@ import React from "react"
 import { Container, Navbar, Nav } from 'react-bootstrap';
 
 const Header = ({ siteTitle }) => (
-  <header className="bg">
+  <header className="bg shadow-sm">
     <Container>
       <Navbar expand="md">
           <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>

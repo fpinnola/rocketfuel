@@ -1,4 +1,8 @@
 module.exports = {
+  proxy: {
+    prefix: "/api",
+    url: "https://cors-anywhere.herokuapp.com/corsdemo",
+  },
   siteMetadata: {
     title: "Rocket Fuel Ventures",
   },

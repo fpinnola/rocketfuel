@@ -2,6 +2,19 @@ import * as React from "react"
 import Layout from "../components/layout";
 import { Link } from "gatsby"
 
+import stevensLogo from '../images/school_logos/stevensLogo.png';
+import rutgersLogo from '../images/school_logos/rutgersLogo.png';
+import pennStateLogo from '../images/school_logos/pennStateLogo.png';
+import columbiaLogo from '../images/school_logos/columbiaLogo.png';
+import lehighLogo from '../images/school_logos/lehighLogo.png';
+import uniHoustonLogo from '../images/school_logos/uniHoustonLogo.png';
+import caseWesternLogo from '../images/school_logos/caseWesternLogo.png';
+import uniVirginiaLogo from '../images/school_logos/uniVirginiaLogo.png';
+import uncLogo from '../images/school_logos/uncLogo.png';
+
+
+
+
 const pageStyles = {
     color: "#232129",
     width: '100%',
@@ -19,15 +32,121 @@ const pageStyles = {
     paddingLeft: '2em',
     flexDirection: 'column'
   }
+  const container = {
+    display: 'flex',
+    flexDirection: 'column',
+    padding: 25
+  }
+
+  const upcomingContainer = {
+    backgroundColor: "#A32638",
+    padding: 25,
+    color: "#FFFFFF",
+    flexDirection: "column"
+  }
+
+  const card = {
+    display: "flex",
+    backgroundColor: "white",
+    flexDirection: "column",
+    width: '100%',
+    justifyContent: "center",
+    alignItems: "center",
+    padding: '15px 15px 15px 15px',
+    hieght: 400
+  }
+
+  const wrapper = {
+    width: "20%",
+    minWidth: '15rem',
+    borderRadius: 12,
+    overflow: "hidden"
+  }
+
+  const list = {
+    display: 'flex',
+    flexWrap: 'wrap'
+}
+
+  const listItem = {
+    display: 'flex',
+    padding: '0.5em',
+    width: '20%',
+    minWidth: '25ch'
+  }
+
+  const listContent = {
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: '#fff',
+    padding: '1em',
+    width: '100%',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    borderRadius: 12
+  }
+
+  const SchoolCard = function({image, name}){
+    return (
+      // <div style={wrapper}>
+      <li style={listItem}>
+        <div style={listContent}>
+          <img src={image} style={{width: "55%", height: 'auto'}}/>
+          <label style={{color: "black", textAlign: "center", fontWeight: 600}}>{name}</label>
+        </div>
+      {/* // </div> */}
+      </li>
+    )
+  }
   
   const About = () => (
     <Layout>
       {/* <SEO title="Home" /> */}
       <main style={pageStyles}>
-        <div style={imageCover}>
-          <h1 style={{maxWidth: '40ch', color: 'white'}}>A student-led Venture Capital Initiative at Stevens Institute of Technology</h1>
-          <Link href="/apply">Let's Go</Link>
+        <div style={container}>
+          <h2 style={{color: '#A32638'}}>About</h2>
+          <h3>Our mission</h3>
+          <p>To educate students on Venture Capital principles and foster the entrepreneurship ecosystems in our community</p>
+          <h3>VC Education</h3>
+          <p>We run an educational program of all our analysts covering the Fundamentals of Venture Capital</p>
+          <h3>Outreach with VCs</h3>
+          <p>We invite VCs and founders to speak at our meetings</p>
+          <h3>Comprehensive Due Dilligence for Launchpad</h3>
+          <p>We partern with LaunchPad to provide alaysis recommendations to companies</p>
         </div>
+        <div style={upcomingContainer}>
+          <h2 style={{color: "#FFD600"}}>Upcoming</h2>
+          <label>VCC Conference</label>
+          <p>April 2021</p>
+          <p>Powered by VC Consortium</p>
+          <br/>
+          <label>Schools Attending</label>
+          <ul style={list}>
+              <SchoolCard image={stevensLogo} name="Stevens Institute of Technology" />
+              <SchoolCard image={rutgersLogo} name="Rutgers University" />
+              <SchoolCard image={pennStateLogo} name="Penn State" />
+              <SchoolCard image={caseWesternLogo} name="Case Western Reservce University" />
+              <SchoolCard image={columbiaLogo} name="Columbia 'University" />
+              <SchoolCard image={lehighLogo} name="Lehigh University" />
+              <SchoolCard image={uncLogo} name="University of North Carolina" />
+              <SchoolCard image={uniHoustonLogo} name="University of Houston" />
+              <SchoolCard image={uniVirginiaLogo} name="University of Virginia" />
+
+          </ul>
+          <div style={{display: "flex", flexWrap: "wrap", gap: "2em"}}>
+            {/* <SchoolCard image={stevensLogo} name="Stevens Institute of Technology" />
+            <SchoolCard image={rutgersLogo} name="Rutgers University" />
+            <SchoolCard image={pennStateLogo} name="Penn State" />
+            <SchoolCard image={caseWesternLogo} name="Stevens Institute of Technology" />
+            <SchoolCard image={columbiaLogo} name="Stevens Institute of Technology" />
+            <SchoolCard image={lehighLogo} name="Stevens Institute of Technology" />
+            <SchoolCard image={uncLogo} name="Stevens Institute of Technology" />
+            <SchoolCard image={uniHoustonLogo} name="Stevens Institute of Technology" />
+            <SchoolCard image={uniVirginiaLogo} name="Stevens Institute of Technology" /> */}
+
+          </div>
+        </div>
+
       </main>
     </Layout>
   )
