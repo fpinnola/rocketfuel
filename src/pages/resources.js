@@ -62,7 +62,7 @@ const pageStyles = {
     useEffect(() => {
       let calls = [];
       for (let i = 0; i < articles.length; i++) {
-        calls.push(fetch('http://link-preview-scraper.herokuapp.com/previewContent/' + encodeURIComponent(articles[i])))
+        calls.push(fetch('https://link-preview-scraper.herokuapp.com/previewContent/' + encodeURIComponent(articles[i])))
       }
       Promise.all(calls)
       .then(function (responses) {
