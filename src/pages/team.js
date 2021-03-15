@@ -13,6 +13,16 @@ const team = [
   { imageURL: "bryankyritz.jpg", name: "Bryan Kyritz", title: "E-Board"},
   { imageURL: "frankpinnola.jpg", name: "Frank Pinnola", title: "Launchpad Advisor"},
   { imageURL: "mukundiyengar.jpg", name: "Mukund Iyengar", title: "Director of Launchpad"},
+  { imageURL: "jayposkitt.jpg", name: "Jay Poskitt", title: "Advisory Board"},
+  { imageURL: "markkanevsky.jpg", name: "Mark Kanevsky", title: "Community Outreach"},
+  { imageURL: "alexismckelvey.jpeg", name: "Alexis McKelvey", title: ""},
+  { imageURL: "davidioffe.jpg", name: "David Ioffe", title: ""},
+  { imageURL: "edaerdemci.jpg", name: "Eda Erdemci", title: ""},
+  { imageURL: "gabetoltus.jpeg", name: "Gabe Toltus", title: ""},
+  { imageURL: "madisondejong.jpeg", name: "Madison DeJong", title: ""},
+  { imageURL: "ninacaldarone.jpg", name: "Nina Caldarone", title: ""},
+
+
 ]
 
 const pageStyles = {
