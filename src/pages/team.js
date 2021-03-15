@@ -1,6 +1,5 @@
 import * as React from "react"
 import Layout from "../components/layout";
-import { Link } from "gatsby"
 
 const team = [
   { imageURL: "brianLi.jpg", name: "Brian Li", title: "E-Board"},
@@ -84,7 +83,6 @@ const pageStyles = {
         <div style={{ width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.3)', padding: '1em', color: "white", display: 'flex', flexDirection: 'column', justifyContent: "flex-end" }}>
           <label>{name}</label>
           <label>{title}</label>
-
         </div>
       </div>
     )

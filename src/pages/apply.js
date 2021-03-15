@@ -41,10 +41,7 @@ const pageStyles = {
   }
   const card = {
     backgroundColor: "white",
-    borderRadius: 20,
     padding: 50,
-    maxWidth: '40em',
-    width: '25%',
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
@@ -69,7 +66,8 @@ const IndexPage = () => {
         <main style={pageStyles}>
           <div style={imageCover}>
               <div style={card}>
-                <Form 
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaSdNoDzW-gJG2nKhxJhHD-NtbMrwLWEwukEe-2IF3VHChww/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                {/* <Form 
                     validationSchema={validationSchema}
                     initialValues={{
                         email: "",
@@ -84,7 +82,7 @@ const IndexPage = () => {
                         <label style={inputLabel}>Resume</label>
                         <input type="file" onChange={(e) => console.log(e)} />
                         <SubmitButton label="Submit" />
-                </Form>
+                </Form> */}
               </div>
               
           </div>
