@@ -5,6 +5,9 @@ module.exports = {
   },
   siteMetadata: {
     title: "Rocket Fuel Ventures",
+    description: "Rocket Fuel Ventures",
+    author: "Frank Pinnola",
+    siteUrl: "http://rocketfuel.vercel.app"
   },
   plugins: [
     "gatsby-plugin-sass",
