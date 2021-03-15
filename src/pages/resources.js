@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 import { renderStatic } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const articles = [
   "https://medium.com/business-insider/how-8-billionaires-feel-about-bitcoin-5b40e3dbbd77",
@@ -75,6 +76,9 @@ const pageStyles = {
 
     return (
       <Layout>
+        <Helmet>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Helmet>
         {/* <SEO title="Home" /> */}
         <main style={pageStyles}>
           <div style={container}>
