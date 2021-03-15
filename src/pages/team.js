@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout";
 
 const team = [
-  { imageURL: "brianLi.jpg", name: "Brian Li", title: "E-Board"},
+  { imageURL: "brianli.jpg", name: "Brian Li", title: "E-Board"},
   { imageURL: "colefelsher.jpg", name: "Cole Felsher", title: "E-Board"},
   { imageURL: "jonsamuel.jpg", name: "Jon Samuel", title: "E-Board"},
   { imageURL: "wallistoscarelli.jpg", name: "Wallis Toscarelli", title: "E-Board"},
