@@ -15,8 +15,8 @@ function PreviewCard({ linkData }) {
     <a style={previewCard} href={linkData.url}>
       <div style={{width: 64, height: 64, backgroundImage: `url(${linkData.image})`, backgroundSize: 'cover', marginRight: 15}}></div>
       <div>
-        <h4>{linkData.title}</h4>
-        <p>{linkData.desc}</p>
+        <h4 style={{ color: "black" }}>{linkData.title}</h4>
+        <p style={{color: "#888"}}>{linkData.desc}</p>
       </div>
     </a>
   )
@@ -28,7 +28,7 @@ const previewCard = {
   justifyContent: 'center',
   alignItems: 'center',
   padding: 10,
-  boxShadow: '0px 3px 3px grey',
+  boxShadow: '0px 3px 6px rgba(0,0,0,0.25)',
   borderRadius: 12,
   width: '100%',
   backgroundColor: '#F8F8F8'

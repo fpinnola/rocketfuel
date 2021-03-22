@@ -8,22 +8,23 @@ import Layout from "../components/layout"
 import Button from "../components/Button"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const pageStyles = {
   color: "#232129",
-  // width: '100%',
-  // height: '100vh',
-  // backgroundImage: `url(${launch})`,
-  // backgroundSize: 'cover',
-  // backgroundRepeat: 'no-repeat',
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const landing = {
   width: '100%',
   height: '100vh',
   backgroundImage: `url(${launch})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
+const landing = {
+  width: '100%',
+  height: '100vh',
+  // backgroundImage: `url(${launch})`,
+  // backgroundSize: 'cover',
+  // backgroundRepeat: 'no-repeat',
 }
 const contentDiv = {
   display: 'flex',
@@ -55,12 +56,14 @@ const goButton = {
 const IndexPage = () => (
   <Layout>
     {/* <SEO title="Home" /> */}
+      
     <main style={pageStyles}>
       <div style={landing}>
         <div style={imageCover}>
           <h1 style={{maxWidth: '40ch', color: 'white'}}>A student-led Venture Capital Initiative at Stevens Institute of Technology</h1>
           <Link style={goButton} href="/apply">Let's Go</Link>
         </div>
+
       </div>
       <div style={contentDiv}>
         <img src={logo} alt="Logo" style={{maxWidth: '12em'}} />

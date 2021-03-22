@@ -12,16 +12,14 @@ import caseWesternLogo from '../images/school_logos/caseWesternLogo.png';
 import uniVirginiaLogo from '../images/school_logos/uniVirginiaLogo.png';
 import uncLogo from '../images/school_logos/uncLogo.png';
 
-
+import "../styles/about.css"
 
 
 const pageStyles = {
-    color: "#232129",
     width: '100%',
     height: '100vh',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    fontFamily: "-apple-system, Roboto, sans-serif, serif",
   }
   const imageCover = {
     width: '100%',
@@ -115,12 +113,12 @@ const pageStyles = {
           <p>We partern with LaunchPad to provide alaysis recommendations to companies</p>
         </div>
         <div style={upcomingContainer}>
-          <h2 style={{color: "#FFD600"}}>Upcoming</h2>
-          <label>VCC Conference</label>
+          <h2 className="upcoming">Upcoming</h2>
+          <h3>VCC Conference</h3>
           <p>April 2021</p>
           <p>Powered by VC Consortium</p>
           <br/>
-          <label>Schools Attending</label>
+          <h4>Schools Attending</h4>
           <ul style={list}>
               <SchoolCard image={stevensLogo} name="Stevens Institute of Technology" />
               <SchoolCard image={rutgersLogo} name="Rutgers University" />
@@ -133,18 +131,6 @@ const pageStyles = {
               <SchoolCard image={uniVirginiaLogo} name="University of Virginia" />
 
           </ul>
-          <div style={{display: "flex", flexWrap: "wrap", gap: "2em"}}>
-            {/* <SchoolCard image={stevensLogo} name="Stevens Institute of Technology" />
-            <SchoolCard image={rutgersLogo} name="Rutgers University" />
-            <SchoolCard image={pennStateLogo} name="Penn State" />
-            <SchoolCard image={caseWesternLogo} name="Stevens Institute of Technology" />
-            <SchoolCard image={columbiaLogo} name="Stevens Institute of Technology" />
-            <SchoolCard image={lehighLogo} name="Stevens Institute of Technology" />
-            <SchoolCard image={uncLogo} name="Stevens Institute of Technology" />
-            <SchoolCard image={uniHoustonLogo} name="Stevens Institute of Technology" />
-            <SchoolCard image={uniVirginiaLogo} name="Stevens Institute of Technology" /> */}
-
-          </div>
         </div>
 
       </main>
