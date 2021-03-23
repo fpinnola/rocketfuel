@@ -1,3 +1,10 @@
 * {
     font-family:  "Open Sans", Arial, sans-serif
 }
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    background-color: #A32638;
+    color: white;
+}

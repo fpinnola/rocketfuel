@@ -5,9 +5,6 @@ import launch from '../images/launch.png';
 import logo from '../images/Logo.png';
 
 import Layout from "../components/layout"
-import Button from "../components/Button"
-// import Image from "../components/image"
-// import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 const pageStyles = {
@@ -17,7 +14,6 @@ const pageStyles = {
   backgroundImage: `url(${launch})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const landing = {
   width: '100%',
@@ -56,7 +52,6 @@ const goButton = {
 const IndexPage = () => (
   <Layout>
     {/* <SEO title="Home" /> */}
-      
     <main style={pageStyles}>
       <div style={landing}>
         <div style={imageCover}>
@@ -72,6 +67,7 @@ const IndexPage = () => (
           <p style={{color: '#5B5B5B'}}>Our goal is to educate students on VC principles and provide analysis recommendations to LaunchPad</p>
           </div>  
       </div>
+      <footer>hello</footer>
     </main>
   </Layout>
 )

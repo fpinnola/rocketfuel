@@ -10,6 +10,15 @@ const articles = [
   "https://olgamaslikhova.medium.com/data-shows-women-founded-companies-perform-better-across-the-board-92845360d20"
 ]
 
+const data = [
+  {
+    url: "https://medium.com/business-insider/how-8-billionaires-feel-about-bitcoin-5b40e3dbbd77",
+    image: "https://miro.medium.com/focal/1200/632/49/37/1*A_0wVh620aNYPLx1FUjr6Q.jpeg",
+    title: "How 8 billionaires feel about bitcoin",
+    desc: "Investing legend Warren Buffett has said that he owns no cryptocurrency and never will."
+  },
+]
+
 function PreviewCard({ linkData }) {
   return (
     <a style={previewCard} href={linkData.url}>
@@ -83,7 +92,7 @@ const pageStyles = {
         <main style={pageStyles}>
           <div style={container}>
             <h1 style={title}>Resources</h1>
-            {articlesData.map((a) => <PreviewCard key={a.desc} linkData={a}/>)}
+            {data.map((a) => <PreviewCard key={a.desc} linkData={a}/>)}
           </div>
         </main>
       </Layout>
