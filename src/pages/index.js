@@ -67,7 +67,7 @@ const IndexPage = () => (
           <p style={{color: '#5B5B5B'}}>Our goal is to educate students on VC principles and provide analysis recommendations to LaunchPad</p>
           </div>  
       </div>
-      <footer>hello</footer>
+      {/* <footer>hello</footer> */}
     </main>
   </Layout>
 )
