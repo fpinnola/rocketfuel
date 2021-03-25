@@ -124,7 +124,7 @@ const pageStyles = {
               <SchoolCard image={rutgersLogo} name="Rutgers University" />
               <SchoolCard image={pennStateLogo} name="Penn State" />
               <SchoolCard image={caseWesternLogo} name="Case Western Reservce University" />
-              <SchoolCard image={columbiaLogo} name="Columbia 'University" />
+              <SchoolCard image={columbiaLogo} name="Columbia University" />
               <SchoolCard image={lehighLogo} name="Lehigh University" />
               <SchoolCard image={uncLogo} name="University of North Carolina" />
               <SchoolCard image={uniHoustonLogo} name="University of Houston" />
