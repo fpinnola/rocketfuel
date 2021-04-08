@@ -110,7 +110,7 @@ const pageStyles = {
           <h3>Outreach with VCs</h3>
           <p>We invite VCs and founders to speak at our meetings</p>
           <h3>Comprehensive Due Dilligence for Launchpad</h3>
-          <p>We partern with LaunchPad to provide alaysis recommendations to companies</p>
+          <p>We partner with LaunchPad to provide analysis recommendations to companies</p>
         </div>
         <div style={upcomingContainer}>
           <h2 className="upcoming">Upcoming</h2>
