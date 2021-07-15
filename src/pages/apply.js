@@ -15,7 +15,17 @@ const validationSchema = Yup.object().shape({
     password: Yup.string().required().label("Password"),
 });
 
-
+const goButton = {
+  paddingTop: 10,
+  paddingBottom: 10,
+  paddingLeft: 20,
+  paddingRight: 20,
+  borderRadius: 12,
+  borderWeight: 2.0,
+  border: "2px solid white",
+  color: "white",
+  // marginRight: 'auto'
+}
 
 // styles
 const pageStyles = {
@@ -65,8 +75,13 @@ const IndexPage = () => {
         {/* <SEO title="Home" /> */}
         <main style={pageStyles}>
           <div style={imageCover}>
-              <div style={card}>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaSdNoDzW-gJG2nKhxJhHD-NtbMrwLWEwukEe-2IF3VHChww/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <Link 
+              style={goButton}
+              href="https://forms.gle/EvcnM4kDDyHBCu4dA"
+              target="_blank"
+              >
+                <h4>Go to Application</h4>
+              {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaSdNoDzW-gJG2nKhxJhHD-NtbMrwLWEwukEe-2IF3VHChww/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
                 {/* <Form 
                     validationSchema={validationSchema}
                     initialValues={{
@@ -83,7 +98,7 @@ const IndexPage = () => {
                         <input type="file" onChange={(e) => console.log(e)} />
                         <SubmitButton label="Submit" />
                 </Form> */}
-              </div>
+              </Link>
               
           </div>
         </main>
